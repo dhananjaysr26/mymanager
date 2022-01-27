@@ -1,0 +1,69 @@
+.form-cointer {
+  width: 100%;
+  height: 100%;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  padding: 20px;
+}
+
+.form input {
+  padding: 10px;
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.form-btn {
+  display: flex;
+  justify-content: center;
+  place-items: center;
+}
+.submit-btn {
+  margin-top: 50px;
+  width: 200px;
+  transition: all ease 0.3s;
+  cursor: pointer;
+  border: 2px solid hsl(160, 100%, 50%);
+  background: hsl(240, 70%, 5%);
+  color: hsl(0, 0%, 100%);
+  padding: 0.5em 1em;
+  border-radius: 0.35em;
+  font-size: 1.5em;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  animation: borderColorAnimation 3s infinite alternate linear;
+}
+.name-text,
+.rate-text {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+.form-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  place-items: center;
+}
+
+@keyframes borderColorAnimation {
+  0% {
+    border-color: red;
+  }
+  25% {
+    border-color: orange;
+  }
+  50% {
+    border-color: yellow;
+  }
+  75% {
+    border-color: green;
+  }
+  100% {
+    border-color: blue;
+  }
+}
